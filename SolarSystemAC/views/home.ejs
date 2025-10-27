@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solar System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1 class="text-center bg-danger p-5 text-white m-0">The Solar System</h1>
+    <nav class="bg-dark navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/planet?planetName=Mercury">Mercury</a>
+                    <a class="nav-link" href="/planet?planetName=Venus">Venus</a>
+                    <a class="nav-link" href="/planet?planetName=Earth">Earth</a>
+                    <a class="nav-link" href="/planet?planetName=Mars">Mars</a>
+                    <a class="nav-link" href="/planet?planetName=Jupiter">Jupiter</a>
+                    <a class="nav-link" href="/planet?planetName=Saturn">Saturn</a>
+                    <a class="nav-link" href="/planet?planetName=Uranus">Uranus</a>
+                    <a class="nav-link" href="/planet?planetName=Neptune">Neptune</a>
+                   <a class="nav-link" href="/planet?planetName=Comets"> Comets</a>
+                   <a class="nav-link" href="/planet?planetName=Asteroids"> Asteroids</a>
+                    <!-- planet info is now doing all the heavy lifting instead of merucry ejs , idk if home ejs is still doing something -->
+                </div>
+            </div>
+        </div>
+    </nav>
+   <h1>Welcome to the solar system website here are random images</h1>
+<img src="<%=randomImage%>" width="500" alt="Random Solar System Object">
+
+
+<br> 
+<footer><p class="fw-lighter text-center">Athian Camberos.</p></footer>
+</body>
+
+</html>

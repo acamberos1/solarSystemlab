@@ -30,7 +30,14 @@ app.get('/', (req, res) => {
 app.get('/planet', (req, res) => {
    let planet_name = req.query.planetName;
    let planetInfo = solarSystem[`get${planet_name}`]();
-   let cometInfo = solarSystem[`get${planet_name}`]();
+   
+    if (planet_name === 'Mars') {
+        planetInfo.image = '/images/mars1.jpg';
+    }
+    if (planet_name === 'Jupiter') {
+        planetInfo.image = '/images/jupiter1.jpg';
+    }
+    
    //console.log(planetInfo);
    res.render('planetInfo.ejs', {planetInfo, planet_name});
 });
